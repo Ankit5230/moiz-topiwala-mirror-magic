@@ -19,27 +19,27 @@ const Hero = () => {
               exceptional care with a patient-centered approach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-medical-600 hover:bg-medical-700 text-white">
+              <Button asChild size="lg" className="bg-medical-600 hover:bg-medical-700 text-white transition-all duration-300 transform hover:scale-105">
                 <Link to="/book">Book an Appointment</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-medical-600 text-medical-700 hover:bg-medical-50">
+              <Button asChild variant="outline" size="lg" className="border-medical-600 text-medical-700 hover:bg-medical-50 transition-all duration-300">
                 <Link to="/services">Our Services</Link>
               </Button>
             </div>
             <div className="flex items-center pt-4">
               <div className="flex -space-x-2">
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white animate-fade-in"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white animate-fade-in delay-100"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <img
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white animate-fade-in delay-200"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
@@ -50,11 +50,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative h-full animate-fade-in">
-            <div className="absolute inset-0 bg-medical-600 rounded-full opacity-10 blur-3xl transform -rotate-12"></div>
+            <div className="absolute inset-0 bg-medical-600 rounded-full opacity-10 blur-3xl transform -rotate-12 animate-pulse"></div>
             <img
               src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
               alt="Dr. Moiz Topiwala"
-              className="relative rounded-3xl shadow-xl object-cover w-full h-[500px]"
+              className="relative rounded-3xl shadow-xl object-cover w-full h-[500px] transition-transform duration-500 hover:scale-[1.02]"
             />
           </div>
         </div>
